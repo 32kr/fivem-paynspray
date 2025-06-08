@@ -7,7 +7,7 @@ RegisterNetEvent('paynspray:attemptRepair', function()
     if xPlayer.getMoney() >= price then
         xPlayer.removeMoney(price)
         TriggerClientEvent('paynspray:repairSuccess', src)
-        -- Success chat messages
+
         TriggerClientEvent('chat:addMessage', src, {
             color = { 0, 255, 0 },
             multiline = false,
