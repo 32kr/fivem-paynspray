@@ -1,0 +1,20 @@
+{
+    "paynspray_open_prompt": "Press [G] to open Pay & Spray",
+    "paynspray_menu_title": "Pay & Spray",
+    "paynspray_repair_success": "Your vehicle has been repaired!",
+    "paynspray_repair_fail": "You do not have enough cash for repairs!",
+    "paynspray_color_success": "Color applied!",
+    "paynspray_color_fail": "Could not change color!",
+    "paynspray_tint_success": "Window tint applied!",
+    "paynspray_tint_fail": "Could not apply tint!",
+    "paynspray_upgrade_success": "Upgrade applied!",
+    "paynspray_upgrade_fail": "Could not apply upgrade!",
+    "paynspray_not_in_vehicle": "You must be in a vehicle!",
+    "paynspray_repair_price": "Repair Vehicle ($%{price})",
+    "paynspray_color_price": "Change Vehicle Color ($%{price})",
+    "paynspray_tint_price": "Apply Window Tint ($%{price})",
+    "paynspray_upgrade_price": "Upgrade Vehicle ($%{price})",
+    "paynspray_thank_you": "Thank you for using Pay & Spray! Drive safely.",
+    "paynspray_not_enough_money": "You don’t have enough money.",
+    "paynspray_no_vehicle": "You are not in a vehicle."
+}
