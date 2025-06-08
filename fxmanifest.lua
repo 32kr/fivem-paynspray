@@ -19,9 +19,7 @@ server_scripts {
     'sources/**/server.lua',
 }
 
-escrow_ignore {
-    'compat/*.lua',
-}
+
 
 client_scripts {
     'sources/**/client.lua',
