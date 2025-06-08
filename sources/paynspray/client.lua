@@ -1,7 +1,6 @@
--- Pay & Spray Client (Improved)
+
 local showing = false
 
--- Helper: Check if player is near a mechanic location
 local function isNearMechanic()
     local playerPed = PlayerPedId()
     local coords = GetEntityCoords(playerPed)
@@ -69,7 +68,6 @@ local function getUpgradeOptions()
     }
 end
 
--- Menu registration
 lib.registerContext({
     id = 'paynspray_menu',
     title = 'Pay & Spray',
@@ -183,7 +181,7 @@ lib.registerContext({
     }
 })
 
--- Main thread for prompt and menu
+
 CreateThread(function()
     while true do
         Wait(0)
@@ -243,7 +241,7 @@ RegisterNetEvent('paynspray:repairFailed', function(reason)
     })
 end)
 
--- Color change success/fail
+
 RegisterNetEvent('paynspray:colorSuccess', function(color)
     local veh = GetVehiclePedIsIn(PlayerPedId(), false)
     if veh == 0 then return end
@@ -255,9 +253,8 @@ RegisterNetEvent('paynspray:colorSuccess', function(color)
         canCancel = false,
         disable = { move = true, car = true, mouse = false, combat = true }
     })
-    -- Set both primary and secondary color for best effect
+    
     SetVehicleColours(veh, color, color)
-    -- For pearlescent/extra color, you can also use SetVehicleExtraColours(veh, color, color)
     WashDecalsFromVehicle(veh, 1.0)
     SetVehicleDirtLevel(veh, 0.0)
     lib.notify({
@@ -275,7 +272,6 @@ RegisterNetEvent('paynspray:colorFailed', function(reason)
     })
 end)
 
--- Tint change success/fail
 RegisterNetEvent('paynspray:tintSuccess', function(tint)
     local veh = GetVehiclePedIsIn(PlayerPedId(), false)
     if veh == 0 then return end
