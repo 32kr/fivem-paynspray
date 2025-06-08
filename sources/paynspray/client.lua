@@ -13,7 +13,7 @@ local function isNearMechanic()
 end
 
 local function showPrompt()
-    lib.showTextUI('[G] - Pay & Spray', { -- Changed E to G in prompt
+    lib.showTextUI('[G] - Pay & Spray', {
         position = "top-center",
         icon = 'car',
         style = {
@@ -191,7 +191,7 @@ CreateThread(function()
                 showPrompt()
                 showing = true
             end
-            if IsControlJustReleased(0, 47) then -- G key (was 38 for E)
+            if IsControlJustReleased(0, 47) then
                 TriggerEvent('paynspray:openMenu')
             end
         else
